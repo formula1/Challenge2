@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "angular": "~1.4.7",
-    "ng-table": "~0.8.3"
+    "ng-table": "~0.8.3",
+    "history.js": "~1.8.0"
   }
 }

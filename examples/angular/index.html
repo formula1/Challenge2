@@ -1,7 +1,7 @@
 <!docttype html>
 <html>
 <head>
-  <script src="../../bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
   <script src="./index.js" ></script>
   <link rel="stylesheet" href="./index.css" />
 </head>
@@ -24,8 +24,9 @@
     </div>
     <!-- Removing spaces between ul and li allows fine grain control over display inline-block-->
     <ul class="list"><li ng-repeat="item in list" >
-        <h4>{{item.product.invoiceDescription}}</h4>
+        <h4>{{item.product.name}}</h4>
         <h5>Maker: {{item.brand.name}}</h5>
+        <p>{{item.product.invoiceDescription}}</p>
         <a target="_blank" href="{{item.product.specificationSheetUrl}}">
           View Specification Sheet
         </a>

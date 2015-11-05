@@ -1,6 +1,3 @@
-var search = void 0;
-var products = [];
-
 var app = angular.module('SearchPage', []);
 
 app.service('JSONtoQueryString', function() {
@@ -13,6 +10,8 @@ app.service('JSONtoQueryString', function() {
     return querystring.slice(0, querystring.length - 1);
   };
 });
+
+(function() {
 
 app.controller('searchController', function(
   $scope, $http, $location, JSONtoQueryString
@@ -62,3 +61,5 @@ app.controller('searchController', function(
 
   if ($scope.search) $scope.initList($scope.page);
 });
+
+})();
