@@ -32,7 +32,6 @@ var SearchInfo = React.createClass({displayName: "SearchInfo",
 
 module.exports = SearchInfo;
 
-
 },{"react":169}],2:[function(require,module,exports){
 
 var React = require('react');
@@ -57,7 +56,6 @@ var List = React.createClass({displayName: "List",
 });
 
 module.exports = List;
-
 
 },{"react":169}],3:[function(require,module,exports){
 var React = require('react');
@@ -95,7 +93,6 @@ var QueryComponent = React.createClass({displayName: "QueryComponent",
 
 module.exports = QueryComponent;
 
-
 },{"react":169}],4:[function(require,module,exports){
 
 var React = require('react');
@@ -127,7 +124,6 @@ var Main = React.createClass({displayName: "Main",
 });
 
 ReactDom.render(React.createElement(Main, null), document.body);
-
 
 },{"./Info.jsx":1,"./List.jsx":2,"./Search.jsx":3,"./store":5,"react":169,"react-dom":40}],5:[function(require,module,exports){
 var EE = require('events').EventEmitter;
@@ -191,7 +187,6 @@ History.Adapter.bind(window, 'statechange', function() {
     store.emit('updated');
   });
 });
-
 
 },{"events":7,"qs":36,"superagent":171}],6:[function(require,module,exports){
 

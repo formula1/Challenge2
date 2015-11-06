@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "./node_modules/.bin/browserify ./examples/react/src/index.jsx > ./examples/react/index.js"
   },
   "author": "",
   "license": "ISC",
